@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tswa Mahberat Zoom followup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0 20px;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-tab {
+            padding: 10px 20px;
+            border: none;
+            background: transparent;
+            color: #666;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-tab:hover {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+        }
+
+        .nav-tab.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Content Container */
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Teachers Section Styles */
+        .teachers-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: calc(100vh - 80px);
+            padding: 20px 0;
+        }
+
+        .teachers-section h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .teachers-search {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .teachers-search-input {
+            width: 100%;
+            max-width: 500px;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .teachers-search-input:focus {
+            outline: none;
+            background: white;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+        .teachers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .teacher-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .teacher-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .teacher-name {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .teacher-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .teacher-phone {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .phone-icon {
+            width: 20px;
+            height: 20px;
+            fill: #666;
+        }
+
+        .teacher-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .teacher-action-btn {
+            flex: 1;
+            min-width: 80px;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-size: 14px;
+        }
+
+        .teacher-action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .telegram {
+            background: #0088cc;
+        }
+
+        .telegram:hover {
+            background: #0077b3;
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .whatsapp:hover {
+            background: #22c55e;
+        }
+
+        .call {
+            background: #ff5733;
+        }
+
+        .call:hover {
+            background: #e74c3c;
+        }
+
+        /* Mahberats Section Styles */
+        .mahberats-section {
+            background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
+            min-height: calc(100vh - 80px);
+            padding: 20px 0;
+        }
+
+        .mahberats-section h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .mahberats-search {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .mahberats-search-input {
+            width: 100%;
+            max-width: 500px;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .mahberats-search-input:focus {
+            outline: none;
+            background: white;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+        .mahberats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .mahberat-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mahberat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2ECC71, #27AE60);
+        }
+
+        .mahberat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .mahberat-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .person-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #2ECC71;
+        }
+
+        .person-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .person-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .person-icon {
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(135deg, #2ECC71, #27AE60);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .person-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .person-phone {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding-left: 45px;
+        }
+
+        .person-actions {
+            display: flex;
+            gap: 8px;
+            padding-left: 45px;
+        }
+
+        .person-action-btn {
+            flex: 1;
+            min-width: 70px;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 12px;
+        }
+
+        .person-action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .no-contacts {
+            text-align: center;
+            color: #999;
+            font-style: italic;
+            padding: 20px;
+            font-size: 0.95rem;
+        }
+
+        .no-results {
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            margin-top: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .teachers-grid, .mahberats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .teacher-actions, .person-actions {
+                flex-direction: column;
+            }
+            
+            .teacher-action-btn, .person-action-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-title">⛪ Bete Tsiwa</div>
+            <div class="nav-tabs">
+                <button class="nav-tab active" onclick="switchTab('teachers')">👨‍🏫 Teachers</button>
+                <button class="nav-tab" onclick="switchTab('mahberats')">🏛️ Mahberats</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <!-- Teachers Tab -->
+        <div id="teachers-tab" class="tab-content active">
+            <div class="teachers-section">
+                <h1>📚 Teachers Directory</h1>
+                
+                <div class="teachers-search">
+                    <input type="text" id="teachers-search-input" class="teachers-search-input" placeholder="🔍 Search teachers by name...">
+                </div>
+
+                <div id="teachers-container" class="teachers-grid">
+                    <!-- Teacher cards will be injected here -->
+                </div>
+
+                <div id="teachers-no-results" class="no-results" style="display: none;">
+                    No teachers found matching your search.
+                </div>
+            </div>
+        </div>
+
+        <!-- Mahberats Tab -->
+        <div id="mahberats-tab" class="tab-content">
+            <div class="mahberats-section">
+                <h1>🏛️ Mahberats Directory</h1>
+                
+                <div class="mahberats-search">
+                    <input type="text" id="mahberats-search-input" class="mahberats-search-input" placeholder="🔍 Search mahberats by name...">
+                </div>
+
+                <div id="mahberats-container" class="mahberats-grid">
+                    <!-- Mahberat cards will be injected here -->
+                </div>
+
+                <div id="mahberats-no-results" class="no-results" style="display: none;">
+                    No mahberats found matching your search.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let teachersData = [];
+        let mahberatsData = [];
+
+        // Tab switching
+        function switchTab(tab) {
+            // Update nav tabs
+            document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`[onclick="switchTab('${tab}')"]`).classList.add('active');
+            
+            // Update content
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(`${tab}-tab`).classList.add('active');
+        }
+
+        // Teachers functions
+        function getTeacherInitials(name) {
+            return name.split(' ').map(word => word[0]).join('').toUpperCase().slice(0, 2);
+        }
+
+        function createTeacherCard(teacher) {
+            const card = document.createElement('div');
+            card.className = 'teacher-card';
+            
+            card.innerHTML = `
+                <div class="teacher-name">
+                    <div class="teacher-icon">${getTeacherInitials(teacher.Name)}</div>
+                    <span>${teacher.Name}</span>
+                </div>
+                <div class="teacher-phone">
+                    <svg class="phone-icon" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    ${teacher.Phone}
+                </div>
+                <div class="teacher-actions">
+                    <a href="https://t.me/${teacher.Telegram}" target="_blank" class="teacher-action-btn telegram">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.56c-.21 2.27-1.12 7.75-1.58 10.29-.2 1.08-.58 1.44-.95 1.47-.81.07-1.42-.53-2.21-1.04-1.23-.8-1.92-1.3-3.11-2.08-1.38-.88-.49-1.36.3-2.15.21-.21 3.77-3.45 3.84-3.74.01-.04.01-.18-.07-.26s-.2-.05-.29-.03c-.12.03-2.09 1.33-5.91 3.9-.56.38-1.06.57-1.53.56-.5-.01-1.47-.28-2.19-.51-.88-.28-1.58-.43-1.52-.91.03-.25.38-.51 1.05-.78 4.11-1.79 6.85-2.97 8.21-3.55 3.92-1.63 4.73-1.92 5.26-1.93.12 0 .37.03.54.17.14.12.18.28.2.44-.01.06 0 .24-.01.35z"/>
+                        </svg>
+                        Telegram
+                    </a>
+                    <a href="https://wa.me/${teacher.Phone.replace('+','')}" target="_blank" class="teacher-action-btn whatsapp">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+                    <a href="tel:${teacher.Phone}" class="teacher-action-btn call">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        Call
+                    </a>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        function renderTeachers(teachers) {
+            const container = document.getElementById('teachers-container');
+            const noResults = document.getElementById('teachers-no-results');
+            
+            container.innerHTML = '';
+            
+            if (teachers.length === 0) {
+                noResults.style.display = 'block';
+                return;
+            }
+            
+            noResults.style.display = 'none';
+            teachers.forEach(teacher => {
+                container.appendChild(createTeacherCard(teacher));
+            });
+        }
+
+        function filterTeachers(searchTerm) {
+            const filtered = teachersData.filter(teacher => 
+                teacher.Name.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+            renderTeachers(filtered);
+        }
+
+        // Mahberats functions
+        function getPersonInitials(name) {
+            if (!name || name.trim() === '') return '??';
+            return name.split(' ').map(word => word[0]).join('').toUpperCase().slice(0, 2);
+        }
+
+        function createPersonSection(person, personLabel) {
+            if (!person || (!person.Name && !person.Phone)) {
+                return `<div class="no-contacts">${personLabel}: No contact information available</div>`;
+            }
+
+            const displayName = person.Name || 'Unknown';
+            const phone = person.Phone;
+
+            let phoneHtml = '';
+            if (phone) {
+                phoneHtml = `
+                    <div class="person-phone">
+                        <svg class="phone-icon" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        ${phone}
+                    </div>
+                `;
+            }
+
+            let actionsHtml = '';
+            if (phone) {
+                actionsHtml = `
+                    <div class="person-actions">
+                        <a href="https://wa.me/${phone.replace('+','')}" target="_blank" class="person-action-btn whatsapp">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            WhatsApp
+                        </a>
+                        <a href="tel:${phone}" class="person-action-btn call">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            Call
+                        </a>
+                    </div>
+                `;
+            }
+
+            return `
+                <div class="person-section">
+                    <div class="person-header">
+                        <div class="person-icon">${getPersonInitials(displayName)}</div>
+                        <div class="person-name">${personLabel}: ${displayName}</div>
+                    </div>
+                    ${phoneHtml}
+                    ${actionsHtml}
+                </div>
+            `;
+        }
+
+        function createMahberatCard(mahberat) {
+            const card = document.createElement('div');
+            card.className = 'mahberat-card';
+            
+            let person1Html = createPersonSection(mahberat.Person1, 'ሙሴ');
+            let person2Html = createPersonSection(mahberat.Person2, 'አሮን');
+            
+            card.innerHTML = `
+                <div class="mahberat-name">${mahberat.Name}</div>
+                ${person1Html}
+                ${person2Html}
+            `;
+            
+            return card;
+        }
+
+        function renderMahberats(mahberats) {
+            const container = document.getElementById('mahberats-container');
+            const noResults = document.getElementById('mahberats-no-results');
+            
+            container.innerHTML = '';
+            
+            if (mahberats.length === 0) {
+                noResults.style.display = 'block';
+                return;
+            }
+            
+            noResults.style.display = 'none';
+            mahberats.forEach(mahberat => {
+                container.appendChild(createMahberatCard(mahberat));
+            });
+        }
+
+        function filterMahberats(searchTerm) {
+            const filtered = mahberatsData.filter(mahberat => 
+                mahberat.Name.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+            renderMahberats(filtered);
+        }
+
+        // Initialize both directories
+        function initializeDirectories() {
+            // Load Teachers
+            fetch('teachers.json')
+                .then(response => response.json())
+                .then(teachers => {
+                    teachersData = teachers;
+                    renderTeachers(teachers);
+                    
+                    // Setup teachers search
+                    const teachersSearchInput = document.getElementById('teachers-search-input');
+                    teachersSearchInput.addEventListener('input', (e) => {
+                        filterTeachers(e.target.value);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading teachers data:', error);
+                    document.getElementById('teachers-container').innerHTML = 
+                        '<div class="no-results">Error loading teacher data. Please try again later.</div>';
+                });
+
+            // Load Mahberats
+            fetch('mahberats.json')
+                .then(response => response.json())
+                .then(mahberats => {
+                    mahberatsData = mahberats;
+                    renderMahberats(mahberats);
+                    
+                    // Setup mahberats search
+                    const mahberatsSearchInput = document.getElementById('mahberats-search-input');
+                    mahberatsSearchInput.addEventListener('input', (e) => {
+                        filterMahberats(e.target.value);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading mahberats data:', error);
+                    document.getElementById('mahberats-container').innerHTML = 
+                        '<div class="no-results">Error loading mahberat data. Please try again later.</div>';
+                });
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', initializeDirectories);
+    </script>
+</body>
+</html>
