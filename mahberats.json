@@ -1,523 +1,743 @@
 [
   {
-    "Name": "ማኅበረ ልደታ ለማርያም ዘደብረ መዊዕ",
-    "Person1": {
-      "Name": "ሴሚራ ሱለማን",
-      "Phone": "+971542758864",
-      "WhatsApp": "ኢታፈራዉ"
-    },
-    "Person2": null
-  },
-  {
-    "Name": "ማኅበረ ገብረ መንፈስ ቅዱስ ዘደብረ መዊዕ",
-    "Person1": {
-      "Name": "ላምሮት ሙሉጌታ",
-      "Phone": "+971588598913",
-      "WhatsApp": "ኢዩኤል አብይ"
-    },
-    "Person2": {
-      "Name": "ኢዩኤል አብይ",
-      "Phone": "+971567949390",
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ አርሴማ ዘደብረ መዊዕ ቀዳማይ",
-    "Person1": {
-      "Name": "አበበ ቢቂላ( ወልደ ስላሴ)",
-      "Phone": "+971501758226",
-      "WhatsApp": null
-    },
-    "Person2": null
-  },
-  {
-    "Name": "ማኅበረ ቅድስት አርሴማ ዘደብረ መዊዕ ኢንተናሽናል ሲቲ",
-    "Person1": null,
-    "Person2": null
-  },
-  {
-    "Name": "ማኅበረ ቅድስት አርሴማ ዘደብረ መዊዕ ሆቴሎች",
-    "Person1": {
-      "Name": "መቅደላዊት ሙላቱ",
-      "Phone": "+971558367554",
-      "WhatsApp": "ሜሮን"
-    },
-    "Person2": null
-  },
-  {
-    "Name": "ማኅበረ ቅድስት አርሴማ ዘደብረ መዊዕ አውደ ምሕረት",
-    "Person1": {
-      "Name": "መብራት/ ፍቅርተ አርሴማ",
-      "Phone": "+251912871700",
-      "WhatsApp": "ሜሮን"
-    },
-    "Person2": {
-      "Name": "ሜሮን ሮሪሳ ( አስካለ ማርያም)",
-      "Phone": "+971582410521",
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ ቅድስት ሥላሴ ዘደብረ መዊዕ አዉደ ምሕረት",
-    "Person1": {
-      "Name": "እኅተ ማርያም /አይን",
-      "Phone": "+971551503049",
-      "WhatsApp": "ሚስጥረ መሰለ"
-    },
-    "Person2": {
-      "Name": "ሚስጥረ መሰለ",
-      "Phone": "+971521199560",
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ ሥላሴ - እናቶች",
-    "Person1": null,
-    "Person2": null
-  },
-  {
-    "Name": "ማኅበረ ቅድስት ሥላሴ ዘደብረ መዌዕ ዴራ",
-    "Person1": {
-      "Name": "እኅተ ማርያም",
-      "Phone": null,
-      "WhatsApp": null
-    },
-    "Person2": {
-      "Name": "ስንታየው",
-      "Phone": "+971547574687",
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ ቅዱስ ሚካኤል ዘደብረ መዊዕ አጅማን",
-    "Person1": {
-      "Name": "ኦብሴ",
-      "Phone": "+971564984311",
-      "WhatsApp": null
-    },
-    "Person2": null
-  },
-  {
+    "No": 1,
+    "Category": null,
     "Name": "ማኅበረ ሚካኤል ዘደብረ መዊዕ በዕለቱ የሚቀመስ ጽዋዕ",
     "Person1": {
       "Name": "ሳራ",
+      "BaptismName": null,
       "Phone": "+971505130668",
-      "WhatsApp": "ዳዊት"
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "ዳዊት",
+      "BaptismName": null,
       "Phone": "+971554786714",
       "WhatsApp": null
     }
   },
   {
+    "No": 2,
+    "Category": null,
     "Name": "ማኅበረ ሚካኤል ዘደብረ መዊዕ ቀዳማዊ",
     "Person1": {
-      "Name": "ትርሲተ ማርያም",
-      "Phone": "+971529977329",
-      "WhatsApp": "በድሉ ሰጠኝ"
+      "Name": "አይናዲስ",
+      "BaptismName": "ፍቅርተ ሐና",
+      "Phone": "+97150719057",
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "በድሉ ሰጠኝ",
+      "BaptismName": null,
       "Phone": "+971564353260",
       "WhatsApp": null
     }
   },
   {
+    "No": 3,
+    "Category": null,
     "Name": "ማኅበረ ቅዱስ ሚካኤል ዘደብረ መዊዕ በብፁዕ አባታችን",
     "Person1": {
       "Name": "በላይነህ እሱባለው",
-      "Phone": "+971564686621",
-      "WhatsApp": "በኃይሉ"
+      "BaptismName": "ገብረ መስቀል",
+      "Phone": "+971564686621 / +971588676785",
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "በኃይሉ",
+      "BaptismName": null,
       "Phone": "+971554130640",
       "WhatsApp": null
     }
   },
   {
+    "No": 4,
+    "Category": null,
     "Name": "ማኅበረ ሚካኤል ዘደብረ መዊዕ ወላጆች",
     "Person1": {
       "Name": "አንዱአለም",
+      "BaptismName": "ብርሃነ መስቀል",
       "Phone": "+971508043283",
-      "WhatsApp": "ዘላለም"
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "ዘላለም",
+      "BaptismName": null,
       "Phone": "+971503280455",
       "WhatsApp": null
     }
   },
   {
+    "No": 5,
+    "Category": null,
     "Name": "ማኅበረ ቅዱስ ሚካኤል አቃቢያነ ስርዓት",
     "Person1": {
-      "Name": "Ⴣይለገብርኤል ዘውድ",
-      "Phone": "+971562629701",
-      "WhatsApp": "መሳይ ሞላ"
+      "Name": "ኃይለ ጊዮርጊስ",
+      "BaptismName": "ኃይለ ጊዮርጊስ",
+      "Phone": "+971522361612",
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "መሳይ ሞላ",
+      "BaptismName": null,
       "Phone": "+971589826303",
       "WhatsApp": null
     }
   },
   {
-    "Name": "ማኅበረ ኪዳነ ምሕረት ዘደብረ መዊዕ ዴራ",
+    "No": 6,
+    "Category": null,
+    "Name": "ማኅበረ ሚካኤል ዘደብረ መዊዕ ቤተ አርድዕት",
     "Person1": {
-      "Name": "ብርሀኔ አቤቤ",
-      "Phone": "+971509020931",
-      "WhatsApp": "ሜርይ"
+      "Name": "ዲያቆን አቤል",
+      "BaptismName": "ገብረ ሕይወት",
+      "Phone": "+971505636231",
+      "WhatsApp": null
     },
     "Person2": {
-      "Name": "ሜርይ",
-      "Phone": "+971544234210",
+      "Name": "ቤዛዊት",
+      "BaptismName": null,
+      "Phone": null,
       "WhatsApp": null
     }
   },
   {
-    "Name": "ማኅበረ ኪዳነ ምሕረት ዘደብረ መዊዕ አዉደምሕረት",
+    "No": 7,
+    "Category": null,
+    "Name": "ማኅበረ ቅዱስ ሚካኤል ወላጆች ካልዕ (Pilots)",
     "Person1": {
-      "Name": "ሰርካለም ባህሩ",
-      "Phone": "+971566548145",
-      "WhatsApp": "አስናቀች ስዩም"
-    },
-    "Person2": {
-      "Name": "አስናቀች ስዩም",
-      "Phone": "+971524970814",
+      "Name": "ሚካኤል",
+      "BaptismName": null,
+      "Phone": "+971505338039",
       "WhatsApp": null
-    }
+    },
+    "Person2": null
   },
   {
-    "Name": "ማኅበረ ኪዳነ ምሕረት ዘደብረ መዊዕ አልናህዳ",
-    "Person1": {
-      "Name": "ንግስት አቡ",
-      "Phone": "+971526293291",
-      "WhatsApp": "መስረት ግርማ"
-    },
-    "Person2": {
-      "Name": "መስረት ግርማ",
-      "Phone": "+971507030891",
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ ኪዳነ ምሕረት ዘደብረ መዊዕ ሆስቶሶች",
-    "Person1": {
-      "Name": "ሜሮን በረከት",
-      "Phone": "+971551882718",
-      "WhatsApp": "ኪሩቤል"
-    },
-    "Person2": {
-      "Name": "ኪሩቤል",
-      "Phone": "+971556649826",
-      "WhatsApp": null
-    }
-  },
-  {
+    "No": 8,
+    "Category": null,
     "Name": "ማኅበረ ቅዱስ ገብርኤል ዘደብረ መዊዕ ኢንተርናሽናል ሲቲ",
     "Person1": {
-      "Name": "ገብረመድህን",
+      "Name": "ገብረ መድኅን",
+      "BaptismName": "ገብረ መድኅን",
       "Phone": "+971588907600",
-      "WhatsApp": "ደሬ"
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "ደሬ",
+      "BaptismName": null,
       "Phone": "+971524989402",
       "WhatsApp": null
     }
   },
   {
+    "No": 9,
+    "Category": null,
     "Name": "ማኅበረ ቅዱስ ገብርኤል ዘደብረ መዊዕ ዴራ",
-    "Person1": null,
+    "Person1": {
+      "Name": "ራሔል",
+      "BaptismName": "ወለተ ማርያም",
+      "Phone": "+971506949716",
+      "WhatsApp": null
+    },
     "Person2": null
   },
   {
+    "No": 10,
+    "Category": null,
     "Name": "ማኅበረ ቅዱስ ገብርኤል ዘደብረ መዊዕ ናታኒም",
     "Person1": {
       "Name": "ብርሀኑ",
+      "BaptismName": "ወልደ ሚካኤል",
       "Phone": "+971521219324",
-      "WhatsApp": "ሀብታሙ"
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "ሀብታሙ",
+      "BaptismName": null,
       "Phone": "+971569781648",
       "WhatsApp": null
     }
   },
   {
+    "No": 11,
+    "Category": null,
     "Name": "ማኅበረ ቅዱስ ገብርኤል ዘደብረ መዊዕ አዉደ ምሕረት",
     "Person1": {
       "Name": "ውብአለም መላክ ምክሩ",
+      "BaptismName": "ወለተ ገብርኤል",
       "Phone": "+971555516378",
-      "WhatsApp": "ሀዳሲ"
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "ሀዳሲ",
+      "BaptismName": null,
       "Phone": "+971547208606",
       "WhatsApp": null
     }
   },
   {
-    "Name": "ማኅበረ ማርያም ዘደብረ መዊዕ አዉደምሕረት",
-    "Person1": {
-      "Name": "ሀገሬ ቃሲም",
-      "Phone": "+971502671283",
-      "WhatsApp": null
-    },
-    "Person2": null
-  },
-  {
-    "Name": "ማኅበረ ማርያም ዘደብረ መዊዕ ወላጆች",
-    "Person1": {
-      "Name": "ሰሎሞን ካሳው",
-      "Phone": "+971555525446",
-      "WhatsApp": "ሰሎሞን ይስሐቅ"
-    },
-    "Person2": {
-      "Name": "ሰሎሞን ይስሐቅ",
-      "Phone": "+971552285072",
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ ማርያም ዘደብረ መዊዕ ወላጆች ካልዕ",
-    "Person1": {
-      "Name": "ቤተልሔም",
-      "Phone": "+971502951616",
-      "WhatsApp": null
-    },
-    "Person2": null
-  },
-  {
-    "Name": "ማኅበረ ማርያም ዘደብረ መዊዕ ሳሎናውያን",
-    "Person1": {
-      "Name": "መስታወት",
-      "Phone": "+971569065990",
-      "WhatsApp": null
-    },
-    "Person2": null
-  },
-  {
-    "Name": "ማኅበረ ማርያም ግራውንድ እንጂነር /አቪዬሽን/",
-    "Person1": {
-      "Name": "Ⴣይለ ሚካኤል",
-      "Phone": "+971502755004",
-      "WhatsApp": null
-    },
-    "Person2": null
-  },
-  {
-    "Name": "ማኅበረ ቅድስት ማርያም ዘደብረ መዊዕ ዴራ",
-    "Person1": {
-      "Name": "ማኅደረ ማርያም",
-      "Phone": "+971522978893",
-      "WhatsApp": null
-    },
-    "Person2": null
-  },
-  {
+    "No": 12,
+    "Category": null,
     "Name": "ማኅበረ ዑራኤል ዘደብረ መዊዕ",
     "Person1": {
-      "Name": "",
+      "Name": "ወለተ ዮሐንስ",
+      "BaptismName": "ወለተ ዮሐንስ",
       "Phone": "+971542869736",
       "WhatsApp": null
     },
     "Person2": null
   },
   {
-    "Name": "ማኅበረ ቅዱስ ሉቃስ ዘደብረ መዊዕ",
+    "No": 13,
+    "Category": "ሰማዕታት",
+    "Name": "ማኅበረ አርሴማ ዘደብረ መዊዕ ቀዳማይ",
     "Person1": {
-      "Name": "ዲያቆን ዶክተር አንድነት",
-      "Phone": "+971547461525",
-      "WhatsApp": "ማህሌት"
+      "Name": "አበበ ቢቂላ",
+      "BaptismName": "ወልደ ሥላሴ",
+      "Phone": "+971501758226",
+      "WhatsApp": null
+    },
+    "Person2": null
+  },
+  {
+    "No": 14,
+    "Category": "ሰማዕታት",
+    "Name": "ማኅበረ ቅድስት አርሴማ ዘደብረ መዊዕ ኢንተናሽናል ሲቲ",
+    "Person1": {
+      "Name": "የማርያም ወርቅ",
+      "BaptismName": "ወለተ ዮሐንስ",
+      "Phone": "+971556473435",
+      "WhatsApp": null
+    },
+    "Person2": null
+  },
+  {
+    "No": 15,
+    "Category": "ሰማዕታት",
+    "Name": "ማኅበረ ቅድስት አርሴማ ዘደብረ መዊዕ ሆቴሎች",
+    "Person1": {
+      "Name": "መቅደላዊት ሙላቱ",
+      "BaptismName": "ፍቅርተ ማርያም",
+      "Phone": "+971558367554",
+      "WhatsApp": null
     },
     "Person2": {
-      "Name": "ማህሌት",
-      "Phone": "+971527945060",
+      "Name": "ሜሮን",
+      "BaptismName": null,
+      "Phone": null,
       "WhatsApp": null
     }
   },
   {
+    "No": 16,
+    "Category": "ሰማዕታት",
+    "Name": "ማኅበረ ቅድስት አርሴማ ዘደብረ መዊዕ አውደ ምሕረት",
+    "Person1": {
+      "Name": "መብራት",
+      "BaptismName": "ፍቅርተ አርሴማ",
+      "Phone": "+251912871700 / +971529218127",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ሜሮን ሮሪሳ ( አስካለ ማርያም)",
+      "BaptismName": null,
+      "Phone": "+971582410521",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 17,
+    "Category": "ሰማዕታት",
     "Name": "ማኅበረ ቅዱስ ጊዮርጊስ ዘደብረ መዊዕ ቀዳማይ",
     "Person1": {
       "Name": "ዮርዳኖስ አብይ",
+      "BaptismName": "እኅተ ማርቆስ",
       "Phone": "+971503624756",
       "WhatsApp": null
     },
     "Person2": null
   },
   {
+    "No": 18,
+    "Category": "ሰማዕታት",
+    "Name": "ማኅበረ ቅዱስ ሉቃስ ዘደብረ መዊዕ",
+    "Person1": {
+      "Name": "ዲያቆን ዶክተር አንድነት",
+      "BaptismName": "ኃይለ ሚካኤል",
+      "Phone": "+971547461525",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ማህሌት",
+      "BaptismName": null,
+      "Phone": "+971527945060",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 19,
+    "Category": "እግዚአብሔር",
+    "Name": "ማኅበረ ኢየሱስ ካህናት",
+    "Person1": {
+      "Name": "ቀሲስ አባት",
+      "BaptismName": null,
+      "Phone": "+971529773634",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ቀሲስ በኃይሉ",
+      "BaptismName": null,
+      "Phone": "+971586821145",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 20,
+    "Category": "እግዚአብሔር",
+    "Name": "ማኅበረ ቅድስት ሥላሴ ዘደብረ መዊዕ አዉደ ምሕረት",
+    "Person1": {
+      "Name": "አይን",
+      "BaptismName": "እኅተ ማርያም",
+      "Phone": "+971551503049",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ሚስጥረ መሰለ",
+      "BaptismName": null,
+      "Phone": "+971521199560",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 21,
+    "Category": "እግዚአብሔር",
+    "Name": "ማኅበረ ቅድስት ሥላሴ ዘደብረ መዌዕ ዴራ",
+    "Person1": {
+      "Name": "ስንታየሁ",
+      "BaptismName": "ሀብተ ማርያም",
+      "Phone": "+971547574687",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ስንታየው",
+      "BaptismName": null,
+      "Phone": "+971547574687",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 22,
+    "Category": "እግዚአብሔር",
+    "Name": "ማኅበረ መድኃኔዓለም ዘደብረ መዊዕ አዉደምሕረት",
+    "Person1": {
+      "Name": "አልማዝ",
+      "BaptismName": "ወለተ አማኑኤል",
+      "Phone": "+971525603522",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ለምለም",
+      "BaptismName": null,
+      "Phone": "+971542871246",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 23,
+    "Category": "እግዚአብሔር",
+    "Name": "ማኅበረ መድኃኔ ዓለም ዘደብረ መዊዕ ወላጆች",
+    "Person1": {
+      "Name": "ያሬድ በቀለ",
+      "BaptismName": "ፍቅረ ማርያም",
+      "Phone": "+971521560256",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ዪታያል መስፍን",
+      "BaptismName": null,
+      "Phone": "+971582146650",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 24,
+    "Category": "እግዚአብሔር",
+    "Name": "ማኅበረ መድኃኔ ዓለም ዘደብረ መዊዕ ሚዲያ",
+    "Person1": {
+      "Name": "ሚኪያስ ገረሱ",
+      "BaptismName": "ፍቅረ ማርያም",
+      "Phone": "+971508524218",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ጌታነህ ጸጋዬ",
+      "BaptismName": null,
+      "Phone": "+971586905908",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 25,
+    "Category": "እግዚአብሔር",
+    "Name": "ማኅበረ መድኃኔዓለም ዘደብረ መዊዕ እህትማማቾች",
+    "Person1": {
+      "Name": "ሮዛ",
+      "BaptismName": "ጽጌ ማርያም",
+      "Phone": "+971503016172",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ፅጌ ማርያም",
+      "BaptismName": null,
+      "Phone": "+971589172358",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 26,
+    "Category": "እግዚአብሔር",
+    "Name": "ማኅበረ መድኃኔዓለም ዘደብረ መዊእ ግራውንድ ኢንጅነሮች",
+    "Person1": {
+      "Name": "ቀሲስ አንተነህ",
+      "BaptismName": null,
+      "Phone": null,
+      "WhatsApp": null
+    },
+    "Person2": null
+  },
+  {
+    "No": 27,
+    "Category": "እግዚአብሔር",
+    "Name": "ማኅበረ አማኑኤል ዘደብረ መዊዕ ሴልሶች",
+    "Person1": {
+      "Name": "ሜሮን",
+      "BaptismName": "ትርሲተ ማርያም",
+      "Phone": "+971526070145",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ቅድስት",
+      "BaptismName": null,
+      "Phone": "+971582505385",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 28,
+    "Category": "እግዚአብሔር",
+    "Name": "ማኅበረ በዓለ ወልድ አውደ ምሕረት",
+    "Person1": {
+      "Name": "ወለተ ሚካኤል",
+      "BaptismName": "ወለተ ሚካኤል",
+      "Phone": "+971589573012",
+      "WhatsApp": null
+    },
+    "Person2": null
+  },
+  {
+    "No": 29,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ልደታ ለማርያም ዘደብረ መዊዕ",
+    "Person1": {
+      "Name": "ሴሚራ ሱለማን",
+      "BaptismName": "አስካለ ማርያም",
+      "Phone": "+971542758864",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ኢታፈራዉ",
+      "BaptismName": null,
+      "Phone": null,
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 30,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ኪዳነ ምሕረት ዘደብረ መዊዕ ዴራ",
+    "Person1": {
+      "Name": "ብርሃኔ አበበ",
+      "BaptismName": "ጽጌ ሐና",
+      "Phone": "+971509020931",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ሜርይ",
+      "BaptismName": null,
+      "Phone": "+971544234210",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 31,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ኪዳነ ምሕረት ዘደብረ መዊዕ አዉደምሕረት",
+    "Person1": {
+      "Name": "ሰርካለም ባህሩ",
+      "BaptismName": "ወለተ መስቀል",
+      "Phone": "+971566548145",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "አስናቀች ስዩም",
+      "BaptismName": null,
+      "Phone": "+971524970814",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 32,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ኪዳነ ምሕረት ዘደብረ መዊዕ አልናህዳ",
+    "Person1": {
+      "Name": "ንግስት አቡ",
+      "BaptismName": "ወለተ ጽዮን",
+      "Phone": "+971526293291",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "መስረት ግርማ",
+      "BaptismName": null,
+      "Phone": "+971507030891",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 33,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ኪዳነ ምሕረት ዘደብረ መዊዕ ሆስተሶች",
+    "Person1": {
+      "Name": "ሜሮን በረከት",
+      "BaptismName": "ወለተ ዮሐንስ",
+      "Phone": "+971551882718",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ኪሩቤል",
+      "BaptismName": null,
+      "Phone": "+971556649826",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 34,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ኪዳነ ምሕረት ዘደብረ መዊዕ ሴልሶች",
+    "Person1": {
+      "Name": "ሳሮን ፀጋዬ",
+      "BaptismName": "ማኅደረ ማርያም",
+      "Phone": "+9715533610675",
+      "WhatsApp": null
+    },
+    "Person2": null
+  },
+  {
+    "No": 35,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ማርያም ዘደብረ መዊዕ አዉደምሕረት",
+    "Person1": {
+      "Name": "ሀገሬ ቃሲም",
+      "BaptismName": "ወለተ ማርያም",
+      "Phone": "+971544706841 / +971502671283",
+      "WhatsApp": null
+    },
+    "Person2": null
+  },
+  {
+    "No": 36,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ማርያም ዘደብረ መዊዕ ወላጆች",
+    "Person1": {
+      "Name": "ሰሎሞን ካሳው",
+      "BaptismName": "ተስፋ መድኅን",
+      "Phone": "+971555525446",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ሰሎሞን ይስሐቅ",
+      "BaptismName": null,
+      "Phone": "+971552285072",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 37,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ማርያም ዘደብረ መዊዕ ወላጆች ካልዕ",
+    "Person1": {
+      "Name": "ቤተልሔም",
+      "BaptismName": "እሴተ ማርያም",
+      "Phone": "+971502951616",
+      "WhatsApp": null
+    },
+    "Person2": null
+  },
+  {
+    "No": 38,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ማርያም ዘደብረ መዊዕ ሳሎናውያን",
+    "Person1": {
+      "Name": "መስታወት",
+      "BaptismName": null,
+      "Phone": "+971569065990",
+      "WhatsApp": null
+    },
+    "Person2": null
+  },
+  {
+    "No": 39,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ማርያም ግራውንድ እንጂነር",
+    "Person1": {
+      "Name": "ኃይለ ሚካኤል",
+      "BaptismName": "ኃይለ ሚካኤል",
+      "Phone": "+971502755004",
+      "WhatsApp": null
+    },
+    "Person2": null
+  },
+  {
+    "No": 40,
+    "Category": "ወላዲተ አምላክ",
+    "Name": "ማኅበረ ቅድስት ማርያም ዘደብረ መዊዕ ዴራ",
+    "Person1": {
+      "Name": "እኅተ ማርያም",
+      "BaptismName": "እኅተ ማርያም",
+      "Phone": "+971522978893",
+      "WhatsApp": null
+    },
+    "Person2": null
+  },
+  {
+    "No": 41,
+    "Category": "ጻድቃን",
+    "Name": "ማኅበረ ገብረ መንፈስ ቅዱስ ዘደብረ መዊዕ",
+    "Person1": {
+      "Name": "ላምሮት ሙሉጌታ",
+      "BaptismName": "ወለተ ወልድ",
+      "Phone": "+971588598913",
+      "WhatsApp": null
+    },
+    "Person2": {
+      "Name": "ኢዩኤል አብይ",
+      "BaptismName": null,
+      "Phone": "+971567949390",
+      "WhatsApp": null
+    }
+  },
+  {
+    "No": 42,
+    "Category": "ጻድቃን",
     "Name": "ማኅበረ አባ ጊዮርጊስ ዘጋስጫ",
     "Person1": {
-      "Name": "እሴተ ገብርኤል",
+      "Name": "ኢየሩሳሌም",
+      "BaptismName": "እሴተ ገብርኤል",
       "Phone": "+251935325454",
       "WhatsApp": null
     },
     "Person2": null
   },
   {
+    "No": 43,
+    "Category": "ጻድቃን",
     "Name": "ማኅበረ ተክለ ሃይማኖት ዘደብረ መዊዕ",
     "Person1": {
       "Name": "ሙሉ ኢቲቻ",
+      "BaptismName": "አመተ ሥላሴ",
       "Phone": "+971559238397",
-      "WhatsApp": "አዩ ዴበሌ"
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "አዩ ዴበሌ",
+      "BaptismName": null,
       "Phone": "+971545128336",
       "WhatsApp": null
     }
   },
   {
+    "No": 44,
+    "Category": "ጻድቃን",
     "Name": "ማኅበረ ተክለ ሃይማኖት አውደ ምሕረት",
     "Person1": {
       "Name": "ወለተ ኢየሱስ",
-      "Phone": "0528547399",
+      "BaptismName": "ወለተ ኢየሱስ",
+      "Phone": "+971528547399",
       "WhatsApp": null
     },
     "Person2": null
   },
   {
+    "No": 45,
+    "Category": "ጻድቃን",
     "Name": "ማኅበረ ተክለ ሃይማኖት ሚዲያ",
     "Person1": {
       "Name": "መባዕ ጽዮን",
-      "Phone": "0523768820",
+      "BaptismName": "ወለተ አረጋዊ",
+      "Phone": "+971523768820",
       "WhatsApp": null
     },
     "Person2": null
   },
   {
+    "No": 46,
+    "Category": "ጻድቃን",
     "Name": "ማኅበረ ቅድስት ክርስቶስ ሠምራ ዘደብረ መዊዕ",
     "Person1": {
       "Name": "ተመስገን ለማ",
+      "BaptismName": "ኪዳነ ማርያም",
       "Phone": "+971585704073",
-      "WhatsApp": "ማክዳ ታደለ"
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "ማክዳ ታደለ",
+      "BaptismName": null,
       "Phone": "+971558374275",
       "WhatsApp": null
     }
   },
   {
+    "No": 47,
+    "Category": "ጻድቃን",
     "Name": "ማኅበረ አቡነ ሀብተ ማርያም ዘደብረ መዊዕ",
     "Person1": {
       "Name": "ናርዶስ ንጋቱ",
+      "BaptismName": "ወለተ ወልድ",
       "Phone": "+971552718368",
-      "WhatsApp": "አየነዉ ፊቅረ"
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "አየነዉ ፊቅረ",
+      "BaptismName": null,
       "Phone": "+971522589980",
       "WhatsApp": null
     }
   },
   {
-    "Name": "ማኅበረ መድኃኔዓለም ዘደብረ መዊዕ አዉደምሕረት",
-    "Person1": {
-      "Name": "አልማዝ",
-      "Phone": "+971525603522",
-      "WhatsApp": "ለምለም"
-    },
-    "Person2": {
-      "Name": "ለምለም",
-      "Phone": "+971542871246",
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ መድኃኔ ዓለም ዘደብረ መዊዕ ወላጆች",
-    "Person1": {
-      "Name": "ያሬድ በቀለ",
-      "Phone": "+971521560256",
-      "WhatsApp": "ዪታያል መስፍን"
-    },
-    "Person2": {
-      "Name": "ዪታያል መስፍን",
-      "Phone": "+971582146650",
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ መድኃኔዓለም ዘደብረ መዊዕ ሚዲያ",
-    "Person1": {
-      "Name": "ሚኪያስ ገረሱ",
-      "Phone": "+971508524218",
-      "WhatsApp": "ጌታነህ ጸጋዬ"
-    },
-    "Person2": {
-      "Name": "ጌታነህ ጸጋዬ",
-      "Phone": "+971586905908",
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ መድኃኔዓለም ዘደብረ መዊዕ እህትማማቾች",
-    "Person1": {
-      "Name": "እኅተ ማርያም",
-      "Phone": "+971503016172",
-      "WhatsApp": "ፅጌ ማርያም"
-    },
-    "Person2": {
-      "Name": "ፅጌ ማርያም",
-      "Phone": "+971589172358",
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ አማኑኤል ዘደብረ መዊዕ ሴልሶች",
-    "Person1": {
-      "Name": "ሜሮን",
-      "Phone": "+971526070145",
-      "WhatsApp": "ቅድስት"
-    },
-    "Person2": {
-      "Name": "ቅድስት",
-      "Phone": "+971582505385",
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ በዓለ ወልድ አውደ ምሕረት",
-    "Person1": {
-      "Name": "ወለተ ሚካኤል",
-      "Phone": "0589573012",
-      "WhatsApp": null
-    },
-    "Person2": null
-  },
-  {
-    "Name": "ማኅበረ ቅዱስ ላሊበላ ዘደብረ መዊዕ",
-    "Person1": {
-      "Name": "መታሴቢያ ታደሰ",
-      "Phone": "+971569137038",
-      "WhatsApp": "ሰናይት"
-    },
-    "Person2": {
-      "Name": "ሰናይት",
-      "Phone": null,
-      "WhatsApp": null
-    }
-  },
-  {
-    "Name": "ማኅበረ ላሊበላ ግራውንድ ኢንጅነሮች",
+    "No": 48,
+    "Category": "ጻድቃን",
+    "Name": "ማኅበረ ላሊበላ ኢንጅነሮች",
     "Person1": {
       "Name": "ዳንኤል",
-      "Phone": "0522879355",
+      "BaptismName": null,
+      "Phone": "+971522879355",
       "WhatsApp": null
     },
     "Person2": null
   },
   {
+    "No": 49,
+    "Category": "ጻድቃን",
     "Name": "ማኀበረ ቅዱስ ዮሐንስ ዘደብረ መዊዕ",
     "Person1": {
       "Name": "ዘርትሁን ገዛኸኝ",
+      "BaptismName": "ወለተ ጊዮርጊስ",
       "Phone": "+971524484982",
-      "WhatsApp": "ወይንሸት ኩምሣ"
+      "WhatsApp": null
     },
     "Person2": {
       "Name": "ወይንሸት ኩምሣ",
+      "BaptismName": null,
       "Phone": "+971562706592",
       "WhatsApp": null
     }
